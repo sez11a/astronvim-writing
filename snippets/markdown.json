@@ -1,0 +1,27 @@
+{
+  "badge-version": {
+    "prefix": ["bdgv"],
+    "body": ["{bdg-secondary}`$1`"],
+    "description": "Version badge."
+  },
+  "image": {
+    "prefix": ["image"],
+    "body": ["![$2]($1)"],
+    "description": "Insert image."
+  },
+  "right-arrow": {
+    "prefix": ["ra"],
+    "body": ["&rarr;"],
+    "description": "Insert right arrow."
+  },
+  "dockertag": {
+    "prefix": ["docker"],
+    "body": ["[$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]"],
+    "description": "Insert DXP Docker image tag."
+  },
+  "gittag": {
+    "prefix": ["gittag"],
+    "body": ["[$LIFERAY_LEARN_PORTAL_GIT_TAG$]"],
+    "description": "Insert Liferay GitHub Tag"
+  }
+}
