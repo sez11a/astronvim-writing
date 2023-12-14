@@ -81,8 +81,14 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    vim.opt.backspace = "indent,eol,start"
+    vim.opt.tabstop = 3
+    vim.opt.softtabstop = 3
+    vim.opt.shiftwidth = 3
+    vim.opt.expandtab = true
     vim.opt.diffopt:append { "followwrap" }
     vim.opt.spell = true
+    vim.netrw_liststyle = 2
     vim.g.vim_markdown_folding_disabled = 1
     vim.g.voom_tree_placement = "right"
     vim.g.voom_tree_width = 55

@@ -16,6 +16,11 @@ return {
           "markdown",
         },
       },
+      null_ls.builtins.formatting.deno_fmt.with {
+        disabled_filetypes = {
+          "markdown",
+        },
+      },
       null_ls.builtins.diagnostics.markdownlint,
     }
     return config -- return final config table

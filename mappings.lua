@@ -33,6 +33,7 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- blocksave menu
+    ["<leader>k"] = { desc = "Block and Save" },
     ["<leader>ks"] = { "<cmd> w <CR>", desc = "save" },
     ["<leader>ke"] = { "<cmd> enew <CR>", desc = "new buffer" },
     ["<leader>kj"] = { "<cmd> bd <CR>", desc = "close buffer" },
@@ -43,6 +44,7 @@ return {
     ["<leader>kl"] = { "<cmd> cd %:p:h <CR>", desc = "change working dir" },
     ["<leader>kd"] = { "<cmd> Diary <CR>", desc = "open diary" },
     --onscreen format menu
+    ["<leader>o"] = { desc = "Onscreen Format" },
     ["<leader>op"] = { "<cmd> MarkdownPreview <CR>", desc = "markdown preview" },
     ["<leader>om"] = { "<cmd> MarkdownPreviewStop <CR>", desc = "stop markdown preview" },
     ["<leader>ok"] = { "<cmd> bnext <CR>", desc = "next buffer" },
@@ -53,6 +55,17 @@ return {
     --Git menu
     ["<leader>gc"] = { "<cmd> Git commit <CR>", desc = "git commit" },
     ["<leader>gm"] = { "<cmd> Git difftool -y master <CR>", desc = "git diff master" },
+    -- Remap "toggle explorer focus"
+    ["<leader>x"] = {
+      function()
+        if vim.bo.filetype == "neo-tree" then
+          vim.cmd.wincmd "p"
+        else
+          vim.cmd.Neotree "focus"
+        end
+      end,
+      desc = "Toggle Explorer Focus",
+    },
   },
   t = {
     -- setting a mapping to false will disable it

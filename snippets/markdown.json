@@ -1,6 +1,16 @@
 {
+  "badge-subscription": {
+    "prefix": ["bdgsubscription"],
+    "body": ["{bdg-primary}`$1`"],
+    "description": "Subscription badge."
+  },
+  "badge-unsupported": {
+    "prefix": ["bdgunsupported"],
+    "body": ["{bdg-warning}`$1`"],
+    "description": "Unsupported/Warning badge."
+  },
   "badge-version": {
-    "prefix": ["bdgv"],
+    "prefix": ["bdgversion"],
     "body": ["{bdg-secondary}`$1`"],
     "description": "Version badge."
   },
@@ -14,14 +24,25 @@
     "body": ["&rarr;"],
     "description": "Insert right arrow."
   },
-  "dockertag": {
-    "prefix": ["docker"],
+  "tokendocker": {
+    "prefix": ["tokendocker"],
     "body": ["[$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]"],
-    "description": "Insert DXP Docker image tag."
+    "description": "Insert DXP Docker image token."
   },
-  "gittag": {
-    "prefix": ["gittag"],
+  "tokengit": {
+    "prefix": ["tokengit"],
     "body": ["[$LIFERAY_LEARN_PORTAL_GIT_TAG$]"],
-    "description": "Insert Liferay GitHub Tag"
+    "description": "Insert Liferay GitHub token"
+  },
+  "tokenworkspace": {
+    "prefix": ["tokenworkspace"],
+    "body": ["[$LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN$]"],
+    "description": "Insert Liferay Workspace token"
+  },
+  "tokenyoutube": {
+    "prefix": ["tokenyoutube"],
+    "body": ["[$LIFERAY_LEARN_YOUTUBE_URL$]"],
+    "description": "Insert Liferay YouTube token."
   }
+}
 }

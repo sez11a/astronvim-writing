@@ -20,13 +20,14 @@ return {
     lazy = false,
   },
   -- required by vim-markdown
-  {
-    "godlygeek/tabular",
-  },
-  {
-    "preservim/vim-markdown",
-    lazy = false,
-  },
+  -- {
+  --     "godlygeek/tabular",
+  --   lazy = false,
+  --   },
+  --   {
+  --     "preservim/vim-markdown",
+  --     lazy = false,
+  --   },
   {
     "preservim/vim-wordy",
     ft = "markdown",
