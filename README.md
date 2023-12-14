@@ -1,10 +1,10 @@
 # AstroNvim: VimStar Edition
 
-This is a user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim). It takes all the features of [VimStar](https://github.com/sez11a/VimStar) and adds them to AstroNvim, which is a much better and more widely used Neovim distribution. 
+This is a user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim). It takes all the features of [VimStar](https://github.com/sez11a/VimStar) and adds them to AstroNvim, which is a much better and more widely used Neovim distribution.
 
 ## 🛠️ Installation
 
-Of course, first make sure you have Neovim installed. 
+Of course, first make sure you have Neovim installed.
 
 ### Make a backup of your current nvim and shared folder
 
@@ -44,14 +44,15 @@ nvim
 - Toggle outline of Markdown headings ([space] o u)
 - Spell check on
 - Diff wraps
-- Markdownlint enabled, use this config: 
+- Markdownlint enabled, use this config:
 
 ```json
 {
-    "line-length": false,
-    "no-trailing-spaces": false
+  "line-length": false,
+  "no-trailing-spaces": false
 }
 ```
 
 - For reviews, diff current branch against master ([space] g m)
 - Diff against any commit with :Git difftool -y [git hash]
+- Snippets for badges, tokens, and more
