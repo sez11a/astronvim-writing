@@ -81,6 +81,7 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    require("toggle_lsp_diagnostics").init()
     vim.opt.backspace = "indent,eol,start"
     vim.opt.tabstop = 3
     vim.opt.softtabstop = 3

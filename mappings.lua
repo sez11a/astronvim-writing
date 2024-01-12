@@ -48,6 +48,8 @@ return {
     ["<leader>op"] = { "<cmd> MarkdownPreview <CR>", desc = "markdown preview" },
     ["<leader>om"] = { "<cmd> MarkdownPreviewStop <CR>", desc = "stop markdown preview" },
     ["<leader>ok"] = { "<cmd> bnext <CR>", desc = "next buffer" },
+    ["<leader>ol"] = { "<cmd> ToggleDiagOff <CR>", desc = "diagnostics off" },
+    ["<leader>on"] = { "<cmd> ToggleDiagOn <CR>", desc = "diagnostics on" },
     ["<leader>os"] = { "<cmd> set spell <CR>", desc = "spell check" },
     ["<leader>oo"] = { "<cmd> set nospell <CR>", desc = "spell check off" },
     --Might be built in ["<leader>ob"] = {"", desc = "switch buffer"}

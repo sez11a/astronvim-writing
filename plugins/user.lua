@@ -16,6 +16,10 @@ return {
     lazy = false,
   },
   {
+    "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim",
+    lazy = false,
+  },
+  {
     "kshenoy/vim-signature",
     lazy = false,
   },
