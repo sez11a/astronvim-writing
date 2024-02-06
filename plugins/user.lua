@@ -60,6 +60,28 @@ return {
     ft = "otl",
   },
   {
+    "serenevoid/kiwi.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      {
+        name = "work",
+        path = "/home/me/Documents/share/pim/kiwi",
+      },
+    },
+    keys = {
+      { "<leader>ww", ':lua require("kiwi").open_wiki_index()<cr>', desc = "Open Wiki index" },
+      {
+        "<leader>wp",
+        ':lua require("kiwi").open_wiki_index("personal")<cr>',
+        desc = "Open index of personal wiki",
+      },
+      { "<leader>t", ':lua require("kiwi").todo.toggle()<cr>', desc = "Toggle Markdown Task" },
+    },
+    lazy = true,
+  },
+  {
     "L3MON4D3/LuaSnip",
     config = function(plugin, opts)
       --include the default astronvim config that calls the setup call
